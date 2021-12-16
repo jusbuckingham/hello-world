@@ -19,12 +19,6 @@ test('renders authentication tag', () => {
   expect(spanElement).toBeInTheDocument();
 });
 
-test('renders customers tag', () => {
-  render(<Forum />);
-  const spanElement = screen.getByText(/Customers/i);
-  expect(spanElement).toBeInTheDocument();
-});
-
 test('renders payments tag', () => {
   render(<Forum />);
   const spanElement = screen.getByText(/Payments/i);
