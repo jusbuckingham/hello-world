@@ -100,9 +100,9 @@ class Kanban extends Component {
                     <div className="columns is-mobile is-centered">
                         <div className="field is-grouped is-grouped-multiline">
                             <div className="control"><span className="tag is-link is-large">Link</span></div>
-                            <div className="control"><span className="tag is-success is-large">Success</span></div>
+                            <div className="control"><span className="tag is-success is-large" title="success">Success</span></div>
                             <div className="control"><span className="tag is-black is-large">Black</span></div>
-                            <div className="control"><span className="tag is-warning is-large">Warning</span></div>
+                            <div className="control"><span className="tag is-warning is-large"title="warning">Warning</span></div>
                             <div className="control"><span className="tag is-danger is-large">Danger</span></div>
                             <div className="control"><span className="tag is-info is-large">Info</span></div>
                         </div>
