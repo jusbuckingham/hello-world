@@ -260,7 +260,7 @@ class Forum extends Component {
                     <span className="tag is-warning is-medium ">Balance</span>
                   </li>
                   <li>
-                    <span className="tag is-medium ">Question</span>
+                    <span className="tag is-medium " title="Question">Question</span>
                   </li>
                 </ul>
               </aside>
