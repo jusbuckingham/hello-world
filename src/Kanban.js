@@ -112,17 +112,9 @@ class Kanban extends Component {
                     <div className="level-item">
                         <div className="columns is-multiline is-centered cards-container" id="sectioncontainer">
                             <div className="column is-narrow">
-                                <article className="message is-black">
-                                    <div className="message-header">
-                                        <p>{displaySearch}</p>
-                                        <button className="delete" aria-label="delete"></button>
-                                    </div>
-                                    <div className="message-body">
-                                        <div className="board-item">
-                                            <div className="board-item-content"><span>The Fort</span></div>
-                                        </div>
-                                    </div>
-                                </article>
+                               
+                                        {displaySearch}
+                                        
                             </div>
                             <div className="column is-narrow">
                                 <article className="message is-primary">
