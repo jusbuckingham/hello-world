@@ -6,6 +6,9 @@ import Racing from './Racing';
 import Basketball from './Basketball';
 import Cover from './Cover';
 import Login from './Login';
+import Documentation from './Documentation';
+import Forum from './Forum';
+import Hero from './Hero';
 
 
 class App extends Component {
@@ -15,7 +18,10 @@ class App extends Component {
         {/* <Racing />
         <Basketball /> */}
         {/* <Cover /> */}
-        <Login />
+        {/* <Login /> */}
+        {/* <Documentation /> */}
+        <Forum />
+        {/* <Hero /> */}
       </div>
     )
   }
