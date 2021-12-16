@@ -11,6 +11,7 @@ import Forum from './Forum';
 import Hero from './Hero';
 import Rocket from './Rocket';
 import Dragon from './Dragon';
+import Kanban from './Kanban';
 
 
 class App extends Component {
@@ -22,10 +23,11 @@ class App extends Component {
         {/* <Cover /> */}
         {/* <Login /> */}
         {/* <Documentation /> */}
-        <Forum />
+        {/* <Forum /> */}
         {/* <Hero /> */}
         {/* <Rocket /> */}
         {/* <Dragon /> */}
+        <Kanban />
       </div>
     )
   }
