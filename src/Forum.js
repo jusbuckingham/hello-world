@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Forum.css";
-import axios from "axios";
+// import axios from "axios";
 
 const comment = {
   message: "I love coding. All day everyday....",
@@ -87,20 +87,20 @@ class Forum extends Component {
     this.state = { rockets: [] };
   }
 
-  componentDidMount() {
-    axios
-      .get("https://api.spacexdata.com/v4/rockets")
-      .then((response) => {
-        // console.log(response.data);
-        this.setState({
-          rockets: response.data,
-        });
-        // rocketList = Array.from(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }
+  // componentDidMount() {
+  //   axios
+  //     .get("https://api.spacexdata.com/v4/rockets")
+  //     .then((response) => {
+  //       // console.log(response.data);
+  //       this.setState({
+  //         rockets: response.data,
+  //       });
+  //       // rocketList = Array.from(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }
 
   displayRockets() {
     let displayRocketList = this.state.rockets.map((r, idx) => {
