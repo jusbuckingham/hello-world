@@ -1,30 +1,27 @@
 import React, { Component } from 'react'
 import './App.css';
-import Basketball from './Basketball';
-import Cornhole from './Cornhole';
-import Football from './Football';
-import Golf from './Golf';
-import Hockey from './Hockey';
 
+// Components
 import Racing from './Racing';
+import Basketball from './Basketball';
+import Cover from './Cover';
+import Login from './Login';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Racing />
-        <Basketball />
-        <Football />
-        <Hockey />
-        <Golf />
-        <Cornhole />
-        <div>
-        </div>
+        {/* <Racing />
+        <Basketball /> */}
+        {/* <Cover /> */}
+        <Login />
       </div>
     )
   }
 }
 
+export default App; // ES6 syntax for exporting
 
-
-export default App;
+// functional component -> made out of a function
+// class component -> is made out of a class
