@@ -9,6 +9,8 @@ import Login from './Login';
 import Documentation from './Documentation';
 import Forum from './Forum';
 import Hero from './Hero';
+import Rocket from './Rocket';
+import Dragon from './Dragon';
 
 
 class App extends Component {
@@ -20,8 +22,10 @@ class App extends Component {
         {/* <Cover /> */}
         {/* <Login /> */}
         {/* <Documentation /> */}
-        <Forum />
+        {/* <Forum /> */}
         {/* <Hero /> */}
+        {/* <Rocket /> */}
+        <Dragon />
       </div>
     )
   }

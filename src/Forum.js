@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Forum.css";
+import axios from "axios";
 
 const comment = {
   message: "I love coding. All day everyday....",
