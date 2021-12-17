@@ -1,34 +1,34 @@
 import React, { Component } from "react";
 import './Kanban.css';
 
-const showSearch = [
+const musicSearch = [
   {
-    categories: 'Popular show',
-    tvShow: 'Hawkeye'
+    categories: 'Pop',
+    album: 'Thriller'
   },
   {
-    categories: 'Top Pick For You',
-    tvShow: 'Marverl 616'
+    categories: 'Rap',
+    album: 'What A Time To Be Alive'
 
   },
   {
-    categories: 'New show',
-    tvShow: 'Called to the Wild'
+    categories: 'Jazz',
+    album: 'Love Supreme'
 
   },
   {
-    categories: 'Action adventure show',
-    tvShow: 'Agent Carter'
+    categories: 'Country',
+    album: 'Nellyville'
 
   },
   {
-    categories: 'Comedy',
-    tvShow: '2 Broke Girls'
+    categories: 'Soul',
+    album: 'Whats Going On'
 
   },
   {
-    categories: '2010s show',
-    tvShow: 'Fresh Off The Boat',
+    categories: 'Classical',
+    album: 'Dat Bach',
 
   }
 ];
