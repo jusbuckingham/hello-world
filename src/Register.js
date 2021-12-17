@@ -33,6 +33,23 @@ const musicSearch = [
   }
 ];
 
+const displaymusicList = musicList.map((c, idx) => {
+    return (
+        <div className="box" key={idx}>
+            <h4 id="const" className="title is-3">{c.categories}</h4>
+            <article className="message is-primary">
+                <span className="icon has-text-primary">
+                    <i className="fab fa-js"></i>
+                </span>
+                <div className="message-body">
+                    {c.wtd}
+                </div>
+            </article>
+            <pre><code className="language-javascript">{c.album}</code></pre>
+        </div>
+    );
+})
+
 class Register extends Component {
   render() {
       return (
@@ -48,6 +65,7 @@ class Register extends Component {
             </div>
             <div class="column right has-text-centered">
               <h1 class="title is-4">Sign up today</h1>
+              {c.album}
               <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
               <form>
                 <div class="field">

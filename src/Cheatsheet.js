@@ -105,28 +105,14 @@ class Cheatsheet extends Component {
                                 <div className="content is-medium">
                                     <h3 className="title is-3">rappers ¯\_(ツ)_/¯</h3>
                                     <div className="box">
-                                        <h4 id="const" className="title is-3">const</h4>
-                                        <article className="message is-primary">
-                                            <span className="icon has-text-primary">
-                                                <i className="fab fa-js"></i>
-                                            </span>
-                                            <div className="message-body">
-                                                Block-scoped. Cannot be re-assigned. Not immutable.
-                                            </div>
-                                        </article>
-                                        <pre><code className="language-javascript">const test = 'test';</code></pre>
+                                        <h4 id="const" className="title is-3"></h4>
+                                       
+                                        <pre><code className="language-javascript"></code></pre>
                                     </div>
                                     <div className="box">
-                                        <h4 id="let" className="title is-3">let</h4>
-                                        <article className="message is-primary">
-                                            <span className="icon has-text-primary">
-                                                <i className="fas fa-info-circle"></i>
-                                            </span>
-                                            <div className="message-body">
-                                                Block-scoped. Can be re-assigned.
-                                            </div>
-                                        </article>
-                                        <pre><code className="language-javascript">let i = 0;</code></pre>
+                                        <h4 id="let" className="title is-3"></h4>
+                                       
+                                        <pre><code className="language-javascript"></code></pre>
                                     </div>
                                     {displayrapperList}
                                     <h3 className="title is-3">More to Come...</h3>
@@ -140,7 +126,7 @@ class Cheatsheet extends Component {
                                                 Lorem ipsum dolor sit amet, mea ne viderer veritus menandri, id scaevola gloriatur instructior sit.
                                             </div>
                                         </article>
-                                        <pre><code className="language-javascript">let i = 0;</code></pre>
+                                        <pre><code className="language-javascript"></code></pre>
                                     </div>
                                 </div>
                             </div>

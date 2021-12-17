@@ -1,6 +1,42 @@
 import React, { Component } from 'react';
 import './Personal.css';
 
+// const actorList = [
+//     {
+//         actor: 'Denzel Washington',
+//         wtd: 'West Coast Legend',
+//         example: "California Love "
+//     },
+//     {
+//         actor: 'Biggie',
+//         wtd: 'East Coast Legend',
+//         example: 'Going Back To Cali'
+//     },
+//     {
+//         actor: 'Diddy',
+//         wtd: 'Revolt Legend',
+//         example: 'Victory'
+//     },
+// ]
+
+// const displayactorList = actorList.map((c, idx) => {
+//     return (
+//         <div className="box" key={idx}>
+//             <h4 id="const" className="title is-3">{c.actor}</h4>
+//             <article className="message is-primary">
+//                 <span className="icon has-text-primary">
+//                     <i className="fab fa-js"></i>
+//                 </span>
+//                 <div className="message-body">
+//                     {c.wtd}
+//                 </div>
+//             </article>
+//             <pre><code className="language-javascript">{c.example}</code></pre>
+//         </div>
+//     );
+// })
+
+
 class Personal extends Component {
     render() {
         return (
