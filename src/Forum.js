@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./Forum.css";
-// import axios from "axios";
+
+// component
+import Article from './Article';
 
 const comment = {
   message: "I love coding. All day everyday....",
@@ -52,29 +54,7 @@ const commentList = [
 
 const displayCommentList = commentList.map((c, idx) => {
   return (
-    <article className="post" key={idx}>
-      <h4>{c.message}</h4>
-      <div className="media">
-        <div className="media-left">
-          <p className="image is-32x32">
-            <img src="http://bulma.io/images/placeholders/128x128.png" alt="" />
-          </p>
-        </div>
-        <div className="media-content">
-          <div className="content">
-            <p>
-              <a href="#">{c.author}</a> replied 34 minutes ago &nbsp;
-              <span className="tag">Question</span>
-            </p>
-          </div>
-        </div>
-        <div className="media-right">
-          <span className="has-text-grey-light">
-            <i className="fa fa-comments"></i> 1
-          </span>
-        </div>
-      </div>
-    </article>
+    <Article key={idx} index={idx} message={c.message} person={c.author} />
   );
 });
 
@@ -82,61 +62,11 @@ let rocketList = [];
 console.log("works", rocketList);
 
 class Forum extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { rockets: [] };
-  }
 
-  // componentDidMount() {
-  //   axios
-  //     .get("https://api.spacexdata.com/v4/rockets")
-  //     .then((response) => {
-  //       // console.log(response.data);
-  //       this.setState({
-  //         rockets: response.data,
-  //       });
-  //       // rocketList = Array.from(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }
+    intro() {
+        console.log('I am from the Forum component....')
+    }
 
-  displayRockets() {
-    let displayRocketList = this.state.rockets.map((r, idx) => {
-      return (
-        <article className="post" key={idx}>
-          <h4>{r.name}</h4>
-          <div className="media">
-            <div className="media-left">
-              <p className="image is-32x32">
-                <img
-                  src="http://bulma.io/images/placeholders/128x128.png"
-                  alt=""
-                />
-              </p>
-            </div>
-            <div className="media-content">
-              <div className="content">
-                <p>
-                  <a href={r.wikipedia}>View Rocket Info</a> replied 34 minutes
-                  ago &nbsp;
-                  <span className="tag">Question</span>
-                </p>
-              </div>
-            </div>
-            <div className="media-right">
-              <span className="has-text-grey-light">
-                <i className="fa fa-comments"></i> 1
-              </span>
-            </div>
-          </div>
-        </article>
-      );
-    });
-
-    return displayRocketList;
-  }
   render() {
     return (
       <div>
@@ -260,14 +190,14 @@ class Forum extends Component {
                     <span className="tag is-warning is-medium ">Balance</span>
                   </li>
                   <li>
-                    <span className="tag is-medium " title="Question">Question</span>
+                    <span className="tag is-medium " title="question">Question</span>
                   </li>
                 </ul>
               </aside>
             </div>
             <div className="column is-9">
               <div className="box content">
-                  {this.displayRockets()}
+                  <Article index={99} message={comment.message} person={comment.author} />
                 <article className="post">
                   <h4>{comment.message}</h4>
                   <div className="media">

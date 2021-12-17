@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './Kanban.css';
+import Movie from './Movie';
 
 const showSearch = [
     {
@@ -35,23 +36,9 @@ const showSearch = [
 
 const displaySearch = showSearch.map((shows, idx) => {
     return (
-        <div key={idx}>
-            <article className="message is-black">
-                <div className="message-header">
-                    <p>{shows.categories}</p>
-                    <button className="delete" aria-label="delete"></button>
-                </div>
-                <div className="message-body">
-                    <div className="board-item">
-                        <div className="board-item-content"><span>{shows.tvShow}</span></div>
-                    </div>
-                </div>
-            </article>
-
-        </div>
-
-    );
-});
+        <Movie key={idx} index={idx} categories={shows.categories} tvShow={shows.tvShow} />
+    
+    )})
 
 
 class Kanban extends Component {

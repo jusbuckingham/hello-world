@@ -6,34 +6,20 @@ import Racing from './Racing';
 import Basketball from './Basketball';
 import Cover from './Cover';
 import Login from './Login';
-import Documentation from './Documentation';
 import Forum from './Forum';
-import Hero from './Hero';
 import Rocket from './Rocket';
 import Dragon from './Dragon';
 import Kanban from './Kanban';
-import Cheatsheet from './Cheatsheet';
-import Personal from './Personal';
-import Register from './Register';
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Racing />
-        <Basketball /> */}
-        {/* <Cover /> */}
-        {/* <Login /> */}
-        {/* <Documentation /> */}
-        {/* <Forum /> */}
-        {/* <Hero /> */}
         {/* <Rocket /> */}
         {/* <Dragon /> */}
-        {/* <Kanban /> */}
-        {/* <Cheatsheet /> */}
-        {/* <Personal /> */}
-        {/* <Register /> */}
+        {/* <Forum /> */}
+        <Kanban />
       </div>
     )
   }
