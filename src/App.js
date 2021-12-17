@@ -31,9 +31,9 @@ class App extends Component {
         {/* <Rocket /> */}
         {/* <Dragon /> */}
         {/* <Kanban /> */}
-        <Cheatsheet />
-        {/* <Personal />
-        <Register /> */}
+        {/* <Cheatsheet /> */}
+        {/* <Personal /> */}
+        <Register />
       </div>
     )
   }

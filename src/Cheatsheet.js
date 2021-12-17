@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Cheatsheet.css';
-import './Prism.css';
 
 
 const snippetList = [

@@ -2,41 +2,42 @@ import React, { Component } from "react";
 import './Kanban.css';
 
 const showSearch = [
-    {
-        categories: 'Popular show',
-        tvShow: 'Hawkeye'
-    },
-    {
-        categories: 'Top Pick For You',
-        tvShow: 'Marverl 616'
+  {
+    categories: 'Popular show',
+    tvShow: 'Hawkeye'
+  },
+  {
+    categories: 'Top Pick For You',
+    tvShow: 'Marverl 616'
 
-    },
-    {
-        categories: 'New show',
-        tvShow: 'Called to the Wild'
+  },
+  {
+    categories: 'New show',
+    tvShow: 'Called to the Wild'
 
-    },
-    {
-        categories: 'Action adventure show',
-        tvShow: 'Agent Carter'
+  },
+  {
+    categories: 'Action adventure show',
+    tvShow: 'Agent Carter'
 
-    },
-    {
-        categories: 'Comedy',
-        tvShow: '2 Broke Girls'
+  },
+  {
+    categories: 'Comedy',
+    tvShow: '2 Broke Girls'
 
-    },
-    {
-        categories: '2010s show',
-        tvShow: 'Fresh Off The Boat',
+  },
+  {
+    categories: '2010s show',
+    tvShow: 'Fresh Off The Boat',
 
-    }
+  }
 ];
 
-const displaySearch = showSearch.map((shows, idx) => {
-    return (
-        <div key={idx}>
-                <section class="container">
+class Register extends Component {
+  render() {
+      return (
+        <div>
+              <section class="container">
       <div class="columns is-multiline">
         <div class="column is-8 is-offset-2 register">
           <div class="columns">
@@ -51,14 +52,14 @@ const displaySearch = showSearch.map((shows, idx) => {
               <form>
                 <div class="field">
                   <div class="control">
-                    <input class="input is-medium" type="text" placeholder="Name">
+                    <input class="input is-medium" type="text" placeholder="Name" />
                   </div>
                 </div>
 
 
                 <div class="field">
                   <div class="control">
-                    <input class="input is-medium" type="email" placeholder="Email">
+                    <input class="input is-medium" type="email" placeholder="Email" />
                   </div>
                 </div>
                 <button class="button is-block is-primary is-fullwidth is-medium">Submit</button>
@@ -69,7 +70,7 @@ const displaySearch = showSearch.map((shows, idx) => {
           </div>
         </div>
         <div class="column is-8 is-offset-2">
-          <br>
+     
           <nav class="level">
             <div class="level-left">
               <div class="level-item">
@@ -97,12 +98,16 @@ const displaySearch = showSearch.map((shows, idx) => {
             </div>
           </nav>
         </div>
+
       </div>
     </section>
 
-            </div>
-        );
-    }
-}
+        </div>
 
-export default Kanban;
+
+
+        )
+      }
+  }
+
+  export default Register;
