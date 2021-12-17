@@ -7,56 +7,20 @@ test('renders text', () => {
   expect(testElement).toBeInTheDocument();
 });
 
-test('renders Acount tag', () => {
+test('renders Country', () => {
   render(<Register />);
-  const testElement = screen.getByText(/Account/i);
+  const testElement = screen.getByText(/Country/i);
   expect(testElement).toBeInTheDocument();
 });
 
-test('renders Dashboard tag', () => {
+test('renders Rap', () => {
   render(<Register />);
-  const testElement = screen.getByText(/Dashboard/i);
+  const testElement = screen.getByText(/Rap/i);
   expect(testElement).toBeInTheDocument();
 });
 
-test('render Profile tag', () => {
+test('render Soul', () => {
   render(<Register />);
-  const testElement = screen.getByText(/Profile/i);
+  const testElement = screen.getByText(/Soul/i);
   expect(testElement).toBeInTheDocument();
 });
-
-test('render Settings tag', () => {
-  render(<Register />);
-  const testElement = screen.getByText(/Settings/i);
-  expect(testElement).toBeInTheDocument();
-});
-
-test('render Logout tag', () => {
-  render(<Register />);
-  const testElement = screen.getByText(/Logout/i);
-  expect(testElement).toBeInTheDocument();
-});
-
-test('render Link tag', () => {
-  render(<Register />);
-  const testElement = screen.getByText(/Link/i);
-  expect(testElement).toBeInTheDocument();
-});
-
-test('render Success tag', () => {
-    render(<Register />);
-    const testElement = screen.getByTitle(/Success/i);
-    expect(testElement).toBeInTheDocument();
-  });
-
-  test('render Black tag', () => {
-    render(<Register />);
-    const testElement = screen.getByText(/Black/i);
-    expect(testElement).toBeInTheDocument();
-  });
-
-  test('render Warning tag', () => {
-    render(<Register />);
-    const testElement = screen.getByTitle(/Warning/i);
-    expect(testElement).toBeInTheDocument();
-  });
