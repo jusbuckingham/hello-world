@@ -12,6 +12,9 @@ import Hero from './Hero';
 import Rocket from './Rocket';
 import Dragon from './Dragon';
 import Kanban from './Kanban';
+import Cheatsheet from './Cheatsheet';
+import Personal from './Personal';
+import Register from './Register';
 
 
 class App extends Component {
@@ -27,7 +30,10 @@ class App extends Component {
         {/* <Hero /> */}
         {/* <Rocket /> */}
         {/* <Dragon /> */}
-        <Kanban />
+        {/* <Kanban /> */}
+        <Cheatsheet />
+        {/* <Personal />
+        <Register /> */}
       </div>
     )
   }
