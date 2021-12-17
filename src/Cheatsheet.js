@@ -2,34 +2,34 @@ import React, { Component } from 'react';
 import './Cheatsheet.css';
 
 
-const snippetList = [
+const rapperList = [
     {
-        name: 'char',
-        properties: 'Is a character',
-        example: "let char = 'a'"
+        rapper: '2pac',
+        wtd: 'West Coast Legend',
+        example: "California Love "
     },
     {
-        name: 'int',
-        properties: 'Is an integer',
-        example: 'let int = 3'
+        rapper: 'Biggie',
+        wtd: 'East Coast Legend',
+        example: 'Going Back To Cali'
     },
     {
-        name: 'float',
-        properties: 'Is a number with a decimal',
-        example: 'let float = 2.4'
+        rapper: 'Diddy',
+        wtd: 'Revolt Legend',
+        example: 'Victory'
     },
 ]
 
-const displaySnippetList = snippetList.map((c, idx) => {
+const displayrapperList = rapperList.map((c, idx) => {
     return (
         <div className="box" key={idx}>
-            <h4 id="const" className="title is-3">{c.name}</h4>
+            <h4 id="const" className="title is-3">{c.rapper}</h4>
             <article className="message is-primary">
                 <span className="icon has-text-primary">
                     <i className="fab fa-js"></i>
                 </span>
                 <div className="message-body">
-                    {c.properties}
+                    {c.wtd}
                 </div>
             </article>
             <pre><code className="language-javascript">{c.example}</code></pre>
@@ -103,7 +103,7 @@ class Cheatsheet extends Component {
                             </div>
                             <div className="column is-9">
                                 <div className="content is-medium">
-                                    <h3 className="title is-3">Snippets ¯\_(ツ)_/¯</h3>
+                                    <h3 className="title is-3">rappers ¯\_(ツ)_/¯</h3>
                                     <div className="box">
                                         <h4 id="const" className="title is-3">const</h4>
                                         <article className="message is-primary">
@@ -128,7 +128,7 @@ class Cheatsheet extends Component {
                                         </article>
                                         <pre><code className="language-javascript">let i = 0;</code></pre>
                                     </div>
-                                    {displaySnippetList}
+                                    {displayrapperList}
                                     <h3 className="title is-3">More to Come...</h3>
                                     <div className="box">
                                         <h4 id="lorem" className="title is-4">More to come...</h4>
